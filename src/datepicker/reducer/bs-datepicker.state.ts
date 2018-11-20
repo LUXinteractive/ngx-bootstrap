@@ -14,6 +14,7 @@ import { BsDatepickerConfig } from '../bs-datepicker.config';
 export interface BsDatepickerViewState {
   date: Date;
   mode: BsDatepickerViewMode;
+  hold?: boolean;
 }
 
 export class BsDatepickerState

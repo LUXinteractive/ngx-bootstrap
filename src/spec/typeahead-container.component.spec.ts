@@ -7,7 +7,7 @@ import {
   TypeaheadDirective,
   TypeaheadMatch,
   TypeaheadOptions
-} from 'ngx-bootstrap/typeahead';
+} from 'lux-ngx-bootstrap/typeahead';
 
 describe('Component: TypeaheadContainer', () => {
   let fixture: ComponentFixture<TypeaheadContainerComponent>;

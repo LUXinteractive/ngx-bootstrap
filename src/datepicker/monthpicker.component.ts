@@ -2,7 +2,7 @@
 // tslint:disable
 import { Component, OnInit } from '@angular/core';
 
-import { isBs3 } from 'ngx-bootstrap/utils';
+import { isBs3 } from 'lux-ngx-bootstrap/utils';
 import { DatePickerInnerComponent } from './datepicker-inner.component';
 
 @Component({

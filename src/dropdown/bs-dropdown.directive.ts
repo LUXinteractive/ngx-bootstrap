@@ -13,13 +13,13 @@ import {
 } from '@angular/core';
 import { filter } from 'rxjs/operators';
 import { Subscription } from 'rxjs';
-import { ComponentLoader, ComponentLoaderFactory, BsComponentRef } from 'ngx-bootstrap/component-loader';
+import { ComponentLoader, ComponentLoaderFactory, BsComponentRef } from 'lux-ngx-bootstrap/component-loader';
 
 import { BsDropdownConfig } from './bs-dropdown.config';
 import { BsDropdownContainerComponent } from './bs-dropdown-container.component';
 import { BsDropdownState } from './bs-dropdown.state';
 import { BsDropdownMenuDirective } from './index';
-import { isBs3 } from 'ngx-bootstrap/utils';
+import { isBs3 } from 'lux-ngx-bootstrap/utils';
 
 @Directive({
   selector: '[bsDropdown],[dropdown]',

@@ -1,49 +1,49 @@
 /* tslint:disable */
-import { AccordionModule } from 'ngx-bootstrap/accordion';
-import { AlertModule } from 'ngx-bootstrap/alert';
-import { ButtonsModule } from 'ngx-bootstrap/buttons';
-import { CarouselModule } from 'ngx-bootstrap/carousel';
-import { CollapseModule } from 'ngx-bootstrap/collapse';
-import { BsDaterangepickerConfig } from 'ngx-bootstrap/datepicker';
-import { DatepickerModule } from 'ngx-bootstrap/datepicker';
-import { BsDropdownModule } from 'ngx-bootstrap/dropdown';
-import { ModalModule } from 'ngx-bootstrap/modal';
-import { PaginationModule } from 'ngx-bootstrap/pagination';
-import { PopoverModule } from 'ngx-bootstrap/popover';
-import { ProgressbarModule } from 'ngx-bootstrap/progressbar';
-import { RatingModule } from 'ngx-bootstrap/rating';
-import { SortableModule } from 'ngx-bootstrap/sortable';
-import { TabsModule } from 'ngx-bootstrap/tabs';
-import { TimepickerModule } from 'ngx-bootstrap/timepicker';
-import { TooltipModule } from 'ngx-bootstrap/tooltip';
-import { TypeaheadModule } from 'ngx-bootstrap/typeahead';
+import { AccordionModule } from 'lux-ngx-bootstrap/accordion';
+import { AlertModule } from 'lux-ngx-bootstrap/alert';
+import { ButtonsModule } from 'lux-ngx-bootstrap/buttons';
+import { CarouselModule } from 'lux-ngx-bootstrap/carousel';
+import { CollapseModule } from 'lux-ngx-bootstrap/collapse';
+import { BsDaterangepickerConfig } from 'lux-ngx-bootstrap/datepicker';
+import { DatepickerModule } from 'lux-ngx-bootstrap/datepicker';
+import { BsDropdownModule } from 'lux-ngx-bootstrap/dropdown';
+import { ModalModule } from 'lux-ngx-bootstrap/modal';
+import { PaginationModule } from 'lux-ngx-bootstrap/pagination';
+import { PopoverModule } from 'lux-ngx-bootstrap/popover';
+import { ProgressbarModule } from 'lux-ngx-bootstrap/progressbar';
+import { RatingModule } from 'lux-ngx-bootstrap/rating';
+import { SortableModule } from 'lux-ngx-bootstrap/sortable';
+import { TabsModule } from 'lux-ngx-bootstrap/tabs';
+import { TimepickerModule } from 'lux-ngx-bootstrap/timepicker';
+import { TooltipModule } from 'lux-ngx-bootstrap/tooltip';
+import { TypeaheadModule } from 'lux-ngx-bootstrap/typeahead';
 
-export { listLocales } from 'ngx-bootstrap/chronos';
-export { setTheme } from 'ngx-bootstrap/utils';
+export { listLocales } from 'lux-ngx-bootstrap/chronos';
+export { setTheme } from 'lux-ngx-bootstrap/utils';
 
 export {
   AccordionComponent,
   AccordionConfig,
   AccordionModule,
   AccordionPanelComponent
-} from 'ngx-bootstrap/accordion';
+} from 'lux-ngx-bootstrap/accordion';
 
-export { AlertComponent, AlertConfig, AlertModule } from 'ngx-bootstrap/alert';
+export { AlertComponent, AlertConfig, AlertModule } from 'lux-ngx-bootstrap/alert';
 
 export {
   ButtonCheckboxDirective,
   ButtonRadioDirective,
   ButtonsModule
-} from 'ngx-bootstrap/buttons';
+} from 'lux-ngx-bootstrap/buttons';
 
 export {
   CarouselComponent,
   CarouselConfig,
   CarouselModule,
   SlideComponent
-} from 'ngx-bootstrap/carousel';
+} from 'lux-ngx-bootstrap/carousel';
 
-export { CollapseDirective, CollapseModule } from 'ngx-bootstrap/collapse';
+export { CollapseDirective, CollapseModule } from 'lux-ngx-bootstrap/collapse';
 
 export {
   DateFormatter,
@@ -59,7 +59,7 @@ export {
   BsLocaleService,
   BsDaterangepickerDirective,
   BsDatepickerDirective
-} from 'ngx-bootstrap/datepicker';
+} from 'lux-ngx-bootstrap/datepicker';
 
 export {
   ModalDirective,
@@ -69,7 +69,7 @@ export {
   ModalModule,
   BsModalRef,
   BsModalService
-} from 'ngx-bootstrap/modal';
+} from 'lux-ngx-bootstrap/modal';
 
 export {
   BsDropdownModule,
@@ -79,7 +79,7 @@ export {
   BsDropdownDirective,
   BsDropdownMenuDirective,
   BsDropdownToggleDirective
-} from 'ngx-bootstrap/dropdown';
+} from 'lux-ngx-bootstrap/dropdown';
 
 export {
   PagerComponent,
@@ -87,16 +87,16 @@ export {
   PaginationConfig,
   PaginationModule,
   PageChangedEvent
-} from 'ngx-bootstrap/pagination';
+} from 'lux-ngx-bootstrap/pagination';
 
 export {
   BarComponent,
   ProgressbarComponent,
   ProgressbarConfig,
   ProgressbarModule
-} from 'ngx-bootstrap/progressbar';
+} from 'lux-ngx-bootstrap/progressbar';
 
-export { RatingComponent, RatingModule } from 'ngx-bootstrap/rating';
+export { RatingComponent, RatingModule } from 'lux-ngx-bootstrap/rating';
 
 export {
   DraggableItem,
@@ -104,7 +104,7 @@ export {
   SortableItem,
   SortableComponent,
   SortableModule
-} from 'ngx-bootstrap/sortable';
+} from 'lux-ngx-bootstrap/sortable';
 
 export {
   NgTranscludeDirective,
@@ -113,20 +113,20 @@ export {
   TabsetComponent,
   TabsetConfig,
   TabsModule
-} from 'ngx-bootstrap/tabs';
+} from 'lux-ngx-bootstrap/tabs';
 
 export {
   TimepickerComponent,
   TimepickerConfig,
   TimepickerModule
-} from 'ngx-bootstrap/timepicker';
+} from 'lux-ngx-bootstrap/timepicker';
 
 export {
   TooltipConfig,
   TooltipContainerComponent,
   TooltipDirective,
   TooltipModule
-} from 'ngx-bootstrap/tooltip';
+} from 'lux-ngx-bootstrap/tooltip';
 
 export {
   TypeaheadOptions,
@@ -134,14 +134,14 @@ export {
   TypeaheadDirective,
   TypeaheadMatch,
   TypeaheadModule
-} from 'ngx-bootstrap/typeahead';
+} from 'lux-ngx-bootstrap/typeahead';
 
 export {
   PopoverConfig,
   PopoverContainerComponent,
   PopoverDirective,
   PopoverModule
-} from 'ngx-bootstrap/popover';
+} from 'lux-ngx-bootstrap/popover';
 
 export {
   OnChange,
@@ -155,27 +155,27 @@ export {
   Utils,
   listenToTriggersV2,
   registerOutsideClick
-} from 'ngx-bootstrap/utils';
+} from 'lux-ngx-bootstrap/utils';
 
 export {
   ComponentLoader,
   ComponentLoaderFactory,
   ContentRef,
   BsComponentRef
-} from 'ngx-bootstrap/component-loader';
+} from 'lux-ngx-bootstrap/component-loader';
 
 export {
   Positioning,
   PositioningOptions,
   PositioningService,
   positionElements
-} from 'ngx-bootstrap/positioning';
+} from 'lux-ngx-bootstrap/positioning';
 
 export {
   Action,
   MiniState,
   MiniStore
-} from 'ngx-bootstrap/mini-ngrx';
+} from 'lux-ngx-bootstrap/mini-ngrx';
 
 export {
   defineLocale,
@@ -203,6 +203,6 @@ export {
   endOf,
   startOf,
   TimeUnit
-} from 'ngx-bootstrap/chronos';
+} from 'lux-ngx-bootstrap/chronos';
 
-export * from 'ngx-bootstrap/locale';
+export * from 'lux-ngx-bootstrap/locale';

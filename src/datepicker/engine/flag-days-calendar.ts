@@ -3,7 +3,7 @@ import {
   DayViewModel,
   WeekViewModel
 } from '../models';
-import { isSameDay, isSameMonth, isAfter, isBefore, shiftDate } from 'ngx-bootstrap/chronos';
+import { isSameDay, isSameMonth, isAfter, isBefore, shiftDate } from 'lux-ngx-bootstrap/chronos';
 import { isMonthDisabled } from '../utils/bs-calendar-utils';
 
 export interface FlagDaysCalendarOptions {
