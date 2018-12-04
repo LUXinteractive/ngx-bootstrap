@@ -3,7 +3,6 @@ import {
   Directive,
   ElementRef,
   forwardRef,
-  Host,
   Provider,
   Renderer2,
   Input
@@ -28,7 +27,6 @@ import {
   isDateValid
 } from 'lux-ngx-bootstrap/chronos';
 
-import { BsDatepickerDirective } from './bs-datepicker.component';
 import { BsLocaleService } from './bs-locale.service';
 import { BsDatepickerConfig } from './bs-datepicker.config';
 
@@ -75,8 +73,7 @@ export class BsDateInputDirective
   constructor(public _config: BsDatepickerConfig,
               private _localeService: BsLocaleService,
               private _renderer: Renderer2,
-              private _elRef: ElementRef,
-              private changeDetection: ChangeDetectorRef) {
+              private _elRef: ElementRef) {
     Object.assign(this, this._config);
     // update input value on locale change
     this._localeService.localeChange.subscribe(() => {
