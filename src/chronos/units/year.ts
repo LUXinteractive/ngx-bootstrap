@@ -66,7 +66,9 @@ export function initYear() {
 }
 
 export function parseTwoDigitYear(input: string): number {
-  return toInt(input) + (toInt(input) > 68 ? 1900 : 2000);
+  const year = +((new Date().getFullYear() + 2).toString().substr(-2));
+
+  return toInt(input) + (toInt(input) > year ? 1900 : 2000);
 }
 
 export function daysInYear(year: number): number {
