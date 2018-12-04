@@ -5,6 +5,7 @@ import { PositioningService } from 'lux-ngx-bootstrap/positioning';
 
 import { warnOnce } from 'lux-ngx-bootstrap/utils';
 import { BsDatepickerInputDirective } from './bs-datepicker-input.directive';
+import { BsDateInputDirective } from './bs-date-input.directive';
 import { BsDatepickerDirective } from './bs-datepicker.component';
 import { BsDatepickerConfig } from './bs-datepicker.config';
 import { BsDaterangepickerInputDirective } from './bs-daterangepicker-input.directive';
@@ -37,6 +38,7 @@ const _exports = [
 
   BsDatepickerDirective,
   BsDatepickerInputDirective,
+  BsDateInputDirective,
 
   BsDaterangepickerInputDirective,
   BsDaterangepickerDirective,
