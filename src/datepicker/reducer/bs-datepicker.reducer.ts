@@ -91,13 +91,11 @@ export function bsDatepickerReducer(state = initialDatepickerState,
 
     case BsDatepickerActions.SET_OPTIONS: {
       const newState = action.payload;
-      // preserve view mode
-      const mode = state.view.mode;
       const _viewDate = isDateValid(newState.value) && newState.value
         || isArray(newState.value) && isDateValid(newState.value[0]) && newState.value[0]
         || state.view.date;
       const date = getViewDate(_viewDate, newState.minDate, newState.maxDate);
-      newState.view = { mode, date };
+      newState.view = { mode: action.payload.initialViewMode || state.view.mode, date };
       // update selected value
       if (newState.value) {
         // if new value is array we work with date range

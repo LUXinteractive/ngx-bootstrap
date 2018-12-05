@@ -1,6 +1,6 @@
 import { Injectable } from '@angular/core';
 import {
-  DatepickerRenderOptions
+  DatepickerRenderOptions, BsDatepickerViewMode
 } from './models';
 
 
@@ -49,4 +49,6 @@ export class BsDatepickerConfig
   monthLabel = 'MMMM';
   yearLabel = 'YYYY';
   weekNumbers = 'w';
+
+  initialViewMode?: BsDatepickerViewMode;
 }
