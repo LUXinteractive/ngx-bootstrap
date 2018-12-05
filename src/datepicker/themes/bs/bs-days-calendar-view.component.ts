@@ -20,6 +20,7 @@ import {
   template: `
     <bs-calendar-layout>
       <bs-datepicker-navigation-view
+        class="w-100 px-2"
         [calendar]="calendar"
         (onNavigate)="navigateTo($event)"
         (onViewMode)="changeViewMode($event)"

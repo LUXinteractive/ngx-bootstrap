@@ -15,35 +15,30 @@ import {
   selector: 'bs-datepicker-navigation-view',
   changeDetection: ChangeDetectionStrategy.OnPush,
   template: `
-    <button class="previous"
-            [disabled]="calendar.disableLeftArrow"
-            [style.visibility]="calendar.hideLeftArrow ? 'hidden' : 'visible'"
-            (click)="navTo(true)"><span>&lsaquo;</span>
-    </button>
+    <div class="d-flex justify-content-between">
+      <button class="previous"
+              [disabled]="calendar.disableLeftArrow"
+              [style.visibility]="calendar.hideLeftArrow ? 'hidden' : 'visible'"
+              (click)="navTo(true)"><span>&lsaquo;</span>
+      </button>
 
-    &#8203;  <!-- zero-width space needed for correct alignement
-                  with preserveWhitespaces: false in Angular -->
+      <div>
+        <button class="current"
+                *ngIf="calendar.monthTitle"
+                (click)="view('month')"
+        ><span>{{ calendar.monthTitle }}</span>
+        </button>
 
-    <button class="current"
-            *ngIf="calendar.monthTitle"
-            (click)="view('month')"
-    ><span>{{ calendar.monthTitle }}</span>
-    </button>
+        <button class="current" (click)="view('year')"
+        ><span>{{ calendar.yearTitle }}</span></button>
+      </div>
 
-    &#8203;  <!-- zero-width space needed for correct alignement
-                  with preserveWhitespaces: false in Angular -->
-
-    <button class="current" (click)="view('year')"
-    ><span>{{ calendar.yearTitle }}</span></button>
-
-    &#8203;  <!-- zero-width space needed for correct alignement
-                  with preserveWhitespaces: false in Angular -->
-
-    <button class="next"
-            [disabled]="calendar.disableRightArrow"
-            [style.visibility]="calendar.hideRightArrow ? 'hidden' : 'visible'"
-            (click)="navTo(false)"><span>&rsaquo;</span>
-    </button>
+      <button class="next"
+              [disabled]="calendar.disableRightArrow"
+              [style.visibility]="calendar.hideRightArrow ? 'hidden' : 'visible'"
+              (click)="navTo(false)"><span>&rsaquo;</span>
+      </button>
+    </div>
   `
 })
 export class BsDatepickerNavigationViewComponent {
