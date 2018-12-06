@@ -87,7 +87,7 @@ export class BsDaterangepickerInputDirective
           this._picker._config.rangeInputFormat,
           this._localeService.currentLocale
         );
-      range = (start && end) ? start + this._picker._config.rangeSeparator + end : '';
+      range = (start && end) ? `${start} ${this._picker._config.rangeSeparator} ${end}` : '';
     }
     this._renderer.setProperty(this._elRef.nativeElement, 'value', range);
   }
@@ -140,7 +140,7 @@ export class BsDaterangepickerInputDirective
 
       let _input: (string[] | Date[]) = [];
       if (typeof value === 'string') {
-        _input = value.split(this._picker._config.rangeSeparator);
+        _input = value.split(this._picker._config.rangeSeparator).map(v => v.trim());
       }
 
       if (Array.isArray(value)) {
