@@ -15,11 +15,11 @@ import {
   selector: 'bs-datepicker-navigation-view',
   changeDetection: ChangeDetectionStrategy.OnPush,
   template: `
-    <div class="d-flex justify-content-between">
+    <div>
       <button class="previous"
               [disabled]="calendar.disableLeftArrow"
               [style.visibility]="calendar.hideLeftArrow ? 'hidden' : 'visible'"
-              (click)="navTo(true)"><span>&lsaquo;</span>
+              (click)="navTo(true)"><i></i>
       </button>
 
       <div>
@@ -36,7 +36,7 @@ import {
       <button class="next"
               [disabled]="calendar.disableRightArrow"
               [style.visibility]="calendar.hideRightArrow ? 'hidden' : 'visible'"
-              (click)="navTo(false)"><span>&rsaquo;</span>
+              (click)="navTo(false)"><i></i>
       </button>
     </div>
   `
