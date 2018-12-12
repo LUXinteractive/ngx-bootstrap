@@ -17,6 +17,7 @@ import {
   template: `
     <div>
       <button class="previous"
+              aria-label="previous"
               [disabled]="calendar.disableLeftArrow"
               [style.visibility]="calendar.hideLeftArrow ? 'hidden' : 'visible'"
               (click)="navTo(true)"><i></i>
@@ -34,6 +35,7 @@ import {
       </div>
 
       <button class="next"
+              aria-label="next"
               [disabled]="calendar.disableRightArrow"
               [style.visibility]="calendar.hideRightArrow ? 'hidden' : 'visible'"
               (click)="navTo(false)"><i></i>
