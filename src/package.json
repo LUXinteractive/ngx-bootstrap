@@ -1,9 +1,9 @@
 {
   "name": "lux-ngx-bootstrap",
-  "es2015": "bundles/ngx-bootstrap.es2015.js",
+  "es2015": "bundles/lux-ngx-bootstrap.es2015.js",
   "peerDependencies": {
     "@angular/core": "*",
     "@angular/common": "*"
   },
-  "version": "3.1.1-rc.53"
+  "version": "3.1.1-rc.61"
 }

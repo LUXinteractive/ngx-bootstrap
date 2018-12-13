@@ -1,50 +1,10 @@
 /* tslint:disable */
-import { AccordionModule } from './accordion/accordion.module';
-import { AlertModule } from './alert/alert.module';
-import { ButtonsModule } from './buttons/buttons.module';
-import { CarouselModule } from './carousel/carousel.module';
-import { CollapseModule } from './collapse/collapse.module';
 import { BsDaterangepickerConfig } from './datepicker/bs-daterangepicker.config';
 import { BsDatepickerInlineConfig } from './datepicker/bs-datepicker-inline.config';
 import { DatepickerModule } from './datepicker/datepicker.module';
-import { BsDropdownModule } from './dropdown/bs-dropdown.module';
-import { ModalModule } from './modal/modal.module';
-import { PaginationModule } from './pagination/pagination.module';
-import { PopoverModule } from './popover/popover.module';
-import { ProgressbarModule } from './progressbar/progressbar.module';
-import { RatingModule } from './rating/rating.module';
-import { SortableModule } from './sortable/index';
-import { TabsModule } from './tabs/tabs.module';
-import { TimepickerModule } from './timepicker/timepicker.module';
-import { TooltipModule } from './tooltip/tooltip.module';
-import { TypeaheadModule } from './typeahead/typeahead.module';
 
 export { listLocales } from './chronos/locale/locales';
 export { setTheme } from './utils/theme-provider';
-
-export {
-  AccordionComponent,
-  AccordionConfig,
-  AccordionModule,
-  AccordionPanelComponent
-} from './accordion/index';
-
-export { AlertComponent, AlertConfig, AlertModule } from './alert/index';
-
-export {
-  ButtonCheckboxDirective,
-  ButtonRadioDirective,
-  ButtonsModule
-} from './buttons/index';
-
-export {
-  CarouselComponent,
-  CarouselConfig,
-  CarouselModule,
-  SlideComponent
-} from './carousel/index';
-
-export { CollapseDirective, CollapseModule } from './collapse/index';
 
 export {
   DateFormatter,
@@ -62,88 +22,6 @@ export {
   BsDaterangepickerDirective,
   BsDatepickerDirective
 } from './datepicker/index';
-
-export {
-  ModalDirective,
-  ModalOptions,
-  ModalBackdropOptions,
-  ModalBackdropComponent,
-  ModalModule,
-  BsModalRef,
-  BsModalService
-} from './modal/index';
-
-export {
-  BsDropdownModule,
-  BsDropdownConfig,
-  BsDropdownState,
-  BsDropdownContainerComponent,
-  BsDropdownDirective,
-  BsDropdownMenuDirective,
-  BsDropdownToggleDirective
-} from './dropdown/index';
-
-export {
-  PagerComponent,
-  PaginationComponent,
-  PaginationConfig,
-  PaginationModule,
-  PageChangedEvent
-} from './pagination/index';
-
-export {
-  BarComponent,
-  ProgressbarComponent,
-  ProgressbarConfig,
-  ProgressbarModule
-} from './progressbar/index';
-
-export { RatingComponent, RatingModule } from './rating/index';
-
-export {
-  DraggableItem,
-  DraggableItemService,
-  SortableItem,
-  SortableComponent,
-  SortableModule
-} from './sortable/index';
-
-export {
-  NgTranscludeDirective,
-  TabDirective,
-  TabHeadingDirective,
-  TabsetComponent,
-  TabsetConfig,
-  TabsModule
-} from './tabs/index';
-
-export {
-  TimepickerComponent,
-  TimepickerConfig,
-  TimepickerModule
-} from './timepicker/index';
-
-export {
-  TooltipConfig,
-  TooltipContainerComponent,
-  TooltipDirective,
-  TooltipModule
-} from './tooltip/index';
-
-export {
-  TypeaheadOptions,
-  TypeaheadContainerComponent,
-  TypeaheadDirective,
-  TypeaheadMatch,
-  TypeaheadModule
-} from './typeahead/index';
-
-export {
-  PopoverConfig,
-  PopoverContainerComponent,
-  PopoverDirective,
-  PopoverModule
-} from './popover/index';
 
 export {
   OnChange,
