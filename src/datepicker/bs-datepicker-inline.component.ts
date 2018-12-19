@@ -7,6 +7,7 @@ import { BsDatepickerInlineContainerComponent } from './themes/bs/bs-datepicker-
 import { Subscription } from 'rxjs';
 import { BsDatepickerInlineConfig } from './bs-datepicker-inline.config';
 import { BsDatepickerConfig } from './bs-datepicker.config';
+import { BsDatepickerViewMode } from './models';
 
 @Directive({
   selector: 'bs-datepicker-inline',
@@ -42,6 +43,7 @@ export class BsDatepickerInlineDirective implements OnInit, OnDestroy, OnChanges
    * Maximum date which is available for selection
    */
   @Input() maxDate: Date;
+  @Input() initialViewMode: BsDatepickerViewMode;
   /**
    * Emits when datepicker value has been changed
    */
@@ -106,6 +108,10 @@ export class BsDatepickerInlineDirective implements OnInit, OnDestroy, OnChanges
     if (changes.isDisabled) {
       this._datepickerRef.instance.isDisabled = this.isDisabled;
     }
+
+    if (changes.initialViewMode) {
+      this._datepickerRef.instance.setViewMode(this.initialViewMode);
+    }
   }
 
   /**
@@ -116,7 +122,8 @@ export class BsDatepickerInlineDirective implements OnInit, OnDestroy, OnChanges
       value: this._bsValue,
       isDisabled: this.isDisabled,
       minDate: this.minDate || this.bsConfig && this.bsConfig.minDate,
-      maxDate: this.maxDate || this.bsConfig && this.bsConfig.maxDate
+      maxDate: this.maxDate || this.bsConfig && this.bsConfig.maxDate,
+      initialViewMode: this.initialViewMode || this.bsConfig && this.bsConfig.initialViewMode
     });
   }
 
