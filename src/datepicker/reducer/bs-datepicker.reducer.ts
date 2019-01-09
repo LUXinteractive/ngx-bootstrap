@@ -93,6 +93,7 @@ export function bsDatepickerReducer(state = initialDatepickerState,
       const newState = action.payload;
       const _viewDate = isDateValid(newState.value) && newState.value
         || isArray(newState.value) && isDateValid(newState.value[0]) && newState.value[0]
+        || action.payload.initialViewDate
         || state.view.date;
       const date = getViewDate(_viewDate, newState.minDate, newState.maxDate);
       newState.view = { mode: action.payload.initialViewMode || state.view.mode, date };

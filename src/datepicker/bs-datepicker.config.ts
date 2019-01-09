@@ -50,5 +50,6 @@ export class BsDatepickerConfig
   yearLabel = 'YYYY';
   weekNumbers = 'w';
 
-  initialViewMode?: BsDatepickerViewMode;
+  initialViewDate = new Date();
+  initialViewMode = 'day';
 }
